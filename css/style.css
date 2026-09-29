@@ -1,0 +1,50 @@
+h1 {
+  color: ;
+  font-size: ;
+}
+nav {
+  display: flex;
+  gap: 65px;
+  padding: 25px;
+  background-color: #242424;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(0, 132, 255);
+  font-weight: bold;
+}
+
+    /* Base page styling */
+    :root {
+      --bg: #b8b8e9;
+      --ink: #000000;
+      --accent: #a80000; /* change me! */
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 4; padding: 35px; line-height: 1.6; font-family: system-ui, Arial, sans-serif;
+      color: var(--ink); background: var(--bg);
+    }
+
+nav a:hover {
+  color: #ff0000;
+  background-color: ;
+}
+
+img {
+  max-width: 300px;
+  border-radius: 20%;
+  border: 10px solid #9975ff;
+}
+
+p {
+  padding: 5;
+  line-height: 1;
+}
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}

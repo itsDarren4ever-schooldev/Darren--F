@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Darren Fernandez — Studio Profile</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    canvas {
+      display: block;
+      margin: 20px auto;
+      border: 2px solid #333;
+      background: linear-gradient(to bottom, #87CEEB, #90EE90);
+      cursor: grab;
+    }
+    canvas:active {
+      cursor: grabbing;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Darren Fernandez</h1>
+</header>
+<main>
+  <img src="images/AvatarMaker.png" alt="Describe your avatar here" width="250">
+  <p>My role here is a programmer</p>
+
+  <nav>
+    <div id="nav-links" style="display: none;">
+      <h2><a href="about.html">About Me</a></h2>
+      <h2><a href="work.html">My Work</a></h2>
+    </div>
+  </nav>
+
+  <section>
+    <h2>B    A    L    L </h2>
+    <canvas id="gameCanvas" width="500" height="400"></canvas>
+    <button id="resetBtn" style="display: block; margin: 10px auto; padding: 10px 20px; font-size: 16px; cursor: pointer;">Reset Ball</button>
+  </section>
+
+  <script src="js/script.js"></script>
+  <script>
+    function myFunction() {
+      let punElement = document.getElementById("pun");
+      let navLinks = document.getElementById("nav-links");
+      
+      if (punElement.innerHTML === "") {
+        punElement.innerHTML = "";
+        navLinks.style.display = "block";
+      } else {
+        punElement.innerHTML = "";
+        navLinks.style.display = "none";
+      }
+    }
+  </script>
+</main>
+<footer>
+  <p>&copy; 2026 Darren Fernandez</p>
+</footer>
+</body>
+</html>
